@@ -6,6 +6,8 @@
   --clr-neutral-200: #f4f4f4;
   --clr-neutral-100: #ffffff;
 
+  --clr-shadow-900: #19191919;
+
   --ff-primary: "IBM Plex Sans", sans-serif;
   --ff-secondary: "Oregano", cursive;
 
@@ -22,6 +24,8 @@
 
   --spacing-800: 6.25rem;
   --spacing-700: 3.125rem;
+  --spacing-600: 2rem;
+  --spacing-300: 1.25rem;
   --spacing-200: .625rem;
   --spacing-100: 1.4375rem;
 }
@@ -38,6 +42,7 @@
 
     --spacing-800: 12.5rem;
     --spacing-700: 6.25rem;
+    --spacing-300: 2rem;
     --spacing-200: 1.75rem;
     --spacing-100: 1rem;
   }
@@ -89,6 +94,15 @@ svg {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -103,3 +117,36 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+.container {
+  --max-width: 1200px;
+  --side-padding: 1rem;
+
+  width: min(var(--max-width), 100% - var(--side-padding) * 2);
+  margin-inline: auto;
+}
+
+.button {
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
+  border: none;
+  box-shadow: 0 0 10px var(--clr-shadow-900);
+  transition: ease 0.3s;
+}
+
+.button:hover {
+  color: var(--clr-neutral-100);
+  background: var(--clr-neutral-900);
+  transition: ease 0.3s;
+}
+
+.double-margin-top {
+  margin-top: var(--spacing-800);
+}
+
+.margin-top {
+  margin-top: var(--spacing-700);
+}
+

@@ -1,0 +1,45 @@
+.project-card-preview {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 5px solid var(--clr-neutral-600);
+  box-shadow: 0 0 10px var(--clr-shadow-900);
+}
+
+.project-info {
+  margin-bottom: var(--spacing-100);
+}
+
+.general-info h2 {
+  font-size: var(--size-800);
+  font-weight: var(--fw-bold);
+}
+
+.project-headline {
+  font-size: var(--size-600);
+  color: var(--clr-neutral-700);
+}
+
+.project-description {
+  margin-top: var(--spacing-200);
+  margin-bottom: var(--spacing-100);
+  font-size: var(--size-600);
+}
+
+.techstack-list {
+  display: flex;
+  gap: var(--spacing-200);
+  margin-bottom: var(--spacing-100);
+}
+
+@media (min-width: 1275px) {
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-200);
+  }
+}
+
+.project-card-reversed {
+  order: -1;
+}

@@ -1,10 +1,10 @@
+import { Logo } from "./Logo";
+import "../css/Header.css";
+
 export function Header() {
   return (
-    <header>
-      <div className="logo">
-        <h1>Artiom Astashonak</h1>
-        <p>Software Developer</p>
-      </div>
+    <header className="container">
+      <Logo />
       <nav className="header-nav">
         <ul className="header-nav-list">
           <a href="https://linkedin.com/in/artiomastashonak"><li>Linkedin↗</li></a>

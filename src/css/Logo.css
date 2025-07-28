@@ -1,0 +1,9 @@
+.logo h1 {
+  font-size: var(--size-700);
+}
+
+.logo p {
+  font-family: var(--ff-secondary);
+  font-size: var(--size-500);
+}
+

@@ -1,0 +1,12 @@
+header {
+  margin-top: var(--spacing-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-around;
+  gap: clamp(var(--size-400), 2vw, 10rem);
+}

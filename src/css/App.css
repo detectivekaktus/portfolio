@@ -1,0 +1,49 @@
+/* hero */
+
+.hero-inner-wrapper {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: var(--size-900);
+}
+
+.hero-info {
+  margin-top: var(--spacing-200);
+  display: grid;
+  gap: var(--spacing-200);
+  justify-content: center;
+}
+
+.hero-info p {
+  font-size: var(--size-500);
+  color: var(--clr-neutral-700);
+}
+
+.tech-skills {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+@media (min-width: 50rem) {
+  .hero-inner-wrapper {
+    margin: 0 15vw;
+    text-align: center;
+  }
+}
+
+/* cta */
+.cta h1 {
+  text-align: center;
+  font-size: var(--size-800);
+  margin-bottom: var(--spacing-200);
+}
+
+.cta-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-200);
+}

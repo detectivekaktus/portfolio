@@ -1,3 +1,5 @@
+import "../css/IconCard.css";
+
 type IconCardProps = {
   iconPath: string,
   altText: string
