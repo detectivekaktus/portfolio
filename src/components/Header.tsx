@@ -31,9 +31,9 @@ export function Header() {
       </button>
       <nav id="header-nav" className={`header-nav ${expanded ? "header-nav-expanded" : ""}`}>
         <ul className="header-nav-list">
-          <li><a href="https://linkedin.com/in/artiomastashonak">Linkedin↗</a></li>
-          <li><a href="https://github.com/detectivekaktus">GitHub↗</a></li>
-          <li><a href="#">Resume↗</a></li>
+          <li><a target="_blank" href="https://linkedin.com/in/artiomastashonak">Linkedin↗</a></li>
+          <li><a target="_blank" href="https://github.com/detectivekaktus">GitHub↗</a></li>
+          <li><a target="_blank" href="https://drive.google.com/file/d/1aw56wuHxBhpDA2Caww9wGWEaluzPGhiN/view?usp=sharing">Resume↗</a></li>
         </ul>
       </nav>
     </header>
