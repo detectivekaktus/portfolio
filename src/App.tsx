@@ -51,7 +51,6 @@ export function App() {
             <li><a href="https://github.com/detectivekaktus" target="_blank"><IconCard iconPath="/github-icon.png" altText="GitHub"/></a></li>
             <li><a href="https://linkedin.com/in/artiomastashonak" target="_blank"><IconCard iconPath="/linkedin-icon.png" altText="LinkedIn" /></a></li>
             <li><a href="https://t.me/artiomastashonak" target="_blank"><IconCard iconPath="/telegram-icon.png" altText="Telegram" /></a></li>
-            <li><a href="tel:+393516811815" target="_blank"><IconCard iconPath="/phone-icon.png" altText="Phone" /></a></li>
           </ul>
         </section>
       </main>
