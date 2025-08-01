@@ -2,6 +2,7 @@ import { Button } from "./Button";
 import "../css/ProjectCard.css";
 
 type ProjectCardProps = {
+  role?: string,
   reverse?: boolean,
   className?: string,
   name: string,
@@ -12,9 +13,9 @@ type ProjectCardProps = {
   children: React.ReactNode
 }
 
-export function ProjectCard({ reverse, className, name, headline, description, imgUrl, url, children }: ProjectCardProps) {
+export function ProjectCard({ role, reverse, className, name, headline, description, imgUrl, url, children }: ProjectCardProps) {
   return (
-    <div className={`project-card ${className}`}>
+    <div role={role ? role : ""} className={`project-card ${className}`}>
       <div className="project-info">
         <div className="general-info">
           <h2>{name}</h2>
@@ -26,7 +27,7 @@ export function ProjectCard({ reverse, className, name, headline, description, i
             {children}
           </ul>
         </div>
-        <a href={url}><Button>Check source code↗</Button></a>
+        <a role="button" href={url}><Button>Check source code↗</Button></a>
       </div>
       <img className={reverse ? "project-card-preview project-card-reversed" : "project-card-preview" } src={imgUrl} />
     </div>

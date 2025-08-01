@@ -1,4 +1,4 @@
-header {
+.primary-header {
   margin-top: var(--spacing-200);
   display: flex;
   justify-content: space-between;
@@ -9,4 +9,37 @@ header {
   display: flex;
   justify-content: space-around;
   gap: clamp(var(--size-400), 2vw, 10rem);
+}
+
+.header-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .header-nav-toggle {
+    display: block;
+    border: none;
+    background-color: inherit;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-nav-expanded {
+    text-align: center;
+    display: block;
+    position: fixed;
+    /* shorthand for top bottom left and right */
+    inset: 7rem var(--size-800) auto;
+    background-color: var(--clr-neutral-100);
+    padding: var(--size-800);
+    box-shadow: 0 0 100vmax 0 #000;
+  }
+
+  .header-nav-list {
+    display: grid;
+    gap: var(--spacing-300);
+    font-size: var(--size-900);
+  }
 }

@@ -23,8 +23,8 @@ export function App() {
             </div>
           </div>
         </section>
-        <section className="double-margin-top container projects">
-          <ProjectCard reverse={true}
+        <section role="list" className="double-margin-top container projects">
+          <ProjectCard role="listitem" reverse={true}
             name="JGame" 
             headline="Competitive quiz web app"
             description="Compete with other users in real time by playing custom quizzes"
@@ -35,7 +35,7 @@ export function App() {
             <li><IconCard iconPath="/golang-icon.png" altText="Golang"/></li>
             <li><IconCard iconPath="/postgresql-icon.png" altText="PostgreSQL"/></li>
           </ProjectCard>
-          <ProjectCard className="margin-top" reverse={true}
+          <ProjectCard role="listitem" className="margin-top" reverse={true}
             name="Bridgewatcher" 
             headline="Automation discord bot"
             description="Automate and simplify game tasks for Albion Online within a popular messaging app"
