@@ -9,7 +9,7 @@ export function App() {
     <>
       <Header />
       <main>
-        <section className="margin-top container hero">
+        <section id="hero" className="margin-top container hero">
           <div className="hero-inner-wrapper">
             <h1>Software developer exploring different areas of computer science</h1>
             <div className="hero-info">
@@ -23,7 +23,7 @@ export function App() {
             </div>
           </div>
         </section>
-        <section role="list" className="double-margin-top container projects">
+        <section id="projects" role="list" className="double-margin-top container projects">
           <ProjectCard role="listitem" reverse={true}
             name="JGame" 
             headline="Competitive quiz web app"
@@ -44,13 +44,13 @@ export function App() {
             <li>{Icons.PYTHON}</li>
           </ProjectCard>
         </section>
-        <section className="double-margin-top container cta">
+        <section id="contact" className="double-margin-top container cta">
           <h1>Let's have a talk</h1>
-          <ul className="cta-links">
-            <li><a href="mailto:artiomastashonak@gmail.com">{Icons.EMAIL}</a></li>
-            <li><a href="https://github.com/detectivekaktus" target="_blank">{Icons.GITHUB}</a></li>
-            <li><a href="https://linkedin.com/in/artiomastashonak" target="_blank">{Icons.LINKEDIN}</a></li>
-            <li><a href="https://t.me/artiomastashonak" target="_blank">{Icons.TELEGRAM}</a></li>
+          <ul itemScope itemType="https://schema.org/Person" className="cta-links">
+            <li><a itemProp="email" href="mailto:artiomastashonak@gmail.com" aria-label="Send me an email">{Icons.EMAIL}</a></li>
+            <li><a itemProp="sameAs" href="https://github.com/detectivekaktus" aria-label="See my GitHub repositories" target="_blank">{Icons.GITHUB}</a></li>
+            <li><a itemProp="sameAs" href="https://linkedin.com/in/artiomastashonak" aria-label="Connect with me on LinkedIn" target="_blank">{Icons.LINKEDIN}</a></li>
+            <li><a itemProp="sameAs" href="https://t.me/artiomastashonak" aria-label="Text me on Telegram" target="_blank">{Icons.TELEGRAM}</a></li>
           </ul>
         </section>
       </main>
