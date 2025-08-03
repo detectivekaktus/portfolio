@@ -1,15 +1,16 @@
 import "../css/IconCard.css";
 
 type IconCardProps = {
-  title?: string,
   iconPath: string,
   altText: string
+  tooltip?: string,
 }
 
-export function IconCard({ title, iconPath, altText }: IconCardProps) {
+export function IconCard({ iconPath, altText, tooltip }: IconCardProps) {
   return (
-    <div className="icon-card" title={title}>
+    <div className="icon-card">
       <img src={iconPath} alt={altText} />
+      {tooltip && <span className="icon-card-tooltip" aria-hidden="true">{tooltip}</span>}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 .icon-card {
+  position: relative;
   padding: 0.5rem;
   border-radius: 15px;
   width: 65px;
@@ -8,8 +9,22 @@
 }
 
 .icon-card:hover {
+  cursor: pointer;
   box-shadow: 0 0 10px var(--clr-neutral-700);
   transition: ease .3s;
+}
+
+.icon-card-tooltip {
+  display: none;
+  border-radius: 15px;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-900);
+  padding: 0.75rem;
+}
+
+.icon-card:hover .icon-card-tooltip {
+  position: absolute;
+  display: block;
 }
 
 .icon-card img {
