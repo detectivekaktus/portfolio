@@ -1,15 +1,14 @@
 import "../css/IconCard.css";
 
 type IconCardProps = {
-  iconPath: string,
-  altText: string
   tooltip?: string,
+  children: React.ReactNode
 }
 
-export function IconCard({ iconPath, altText, tooltip }: IconCardProps) {
+export function IconCard({ tooltip, children }: IconCardProps) {
   return (
     <div className="icon-card">
-      <img src={iconPath} alt={altText} loading="lazy"/>
+      {children}
       {tooltip && <span className="icon-card-tooltip" role="tooltip" aria-hidden="true">{tooltip}</span>}
     </div>
   );

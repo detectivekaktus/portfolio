@@ -16,7 +16,6 @@ export function App() {
               <ul className="tech-skills">
                 <li>{Icons.TYPESCRIPT}</li>
                 <li>{Icons.PYTHON}</li>
-                <li>{Icons.GOLANG}</li>
                 <li>{Icons.REACT}</li>
               </ul>
               <p>Bergamo, Italy</p>
