@@ -1,0 +1,16 @@
+.nav-list {
+  display: none;
+}
+
+@media (min-width: 50em) {
+  .nav-list {
+    display: block;
+  }
+
+  .nav-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: clamp(var(--size-400), 2vw, 10rem);
+  }
+}
