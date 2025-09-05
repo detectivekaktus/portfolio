@@ -1,8 +1,8 @@
-.logo h1 {
+.logo-title {
   font-size: var(--size-700);
 }
 
-.logo p {
+.logo-subtitle {
   font-family: var(--ff-secondary);
   font-size: var(--size-500);
 }
